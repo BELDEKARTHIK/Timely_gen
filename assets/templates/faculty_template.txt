@@ -1,0 +1,38 @@
+Employee ID,Faculty Name,Subject,Section,Year,Type,Periods Per Week,Is Incharge,Batch,Email,Preference,Lab Divided Into 2 Batches
+TCH001,Dr. A Kumar,Data Structures,A,1,Theory,4,Yes,0,akumar@college.edu,Monday,No
+TCH002,Mrs. K Ashwini,Programming in C,A,1,Theory,4,No,0,kashwini@college.edu,Monday,No
+TCH003,Dr. P Shanthi,C Programming Lab,A,1,Lab,3,No,1,pshanthi@college.edu,Monday,Yes
+TCH003,Dr. P Shanthi,C Programming Lab,A,1,Lab,3,No,2,pshanthi@college.edu,Monday,Yes
+TCH004,Mr. B Naveen,Engineering Maths,A,1,Theory,4,No,0,bnaveen@college.edu,Monday,No
+TCH005,Ms. D Shravani,Engineering Physics,B,1,Theory,4,Yes,0,dshravani@college.edu,Wednesday,No
+TCH006,Dr. R Prasad,Programming in C,B,1,Theory,4,No,0,rprasad@college.edu,Wednesday,No
+TCH007,Mrs. S Lakshmi,C Programming Lab,B,1,Lab,3,No,0,slakshmi@college.edu,Wednesday,No
+TCH008,Mr. T Ravi,Engineering Maths,B,1,Theory,4,No,0,travi@college.edu,Wednesday,No
+TCH009,Dr. M Srinivas,OOP,A,2,Theory,4,Yes,0,msrinivas@college.edu,Tuesday,No
+TCH010,Mrs. N Padma,DBMS,A,2,Theory,4,No,0,npadma@college.edu,Tuesday,No
+TCH011,Dr. K Reddy,DBMS Lab,A,2,Lab,3,No,1,kreddy@college.edu,Tuesday,Yes
+TCH011,Dr. K Reddy,DBMS Lab,A,2,Lab,3,No,2,kreddy@college.edu,Tuesday,Yes
+TCH012,Mr. V Rao,Computer Networks,A,2,Theory,4,No,0,vrao@college.edu,Tuesday,No
+TCH014,Dr. H Mohan,OOP,B,2,Theory,4,Yes,0,hmohan@college.edu,Thursday,No
+TCH015,Mrs. J Kavitha,DBMS,B,2,Theory,4,No,0,jkavitha@college.edu,Thursday,No
+TCH016,Mr. F Kumar,DBMS Lab,B,2,Lab,3,No,0,fkumar@college.edu,Thursday,No
+TCH017,Dr. G Shankar,Computer Networks,B,2,Theory,4,No,0,gshankar@college.edu,Thursday,No
+TCH018,Ms. C Bhavani,Artificial Intelligence,A,3,Theory,4,Yes,0,cbhavani@college.edu,Wednesday,No
+TCH019,Dr. E Naidu,Machine Learning,A,3,Theory,4,No,0,enaidu@college.edu,Wednesday,No
+TCH020,Mr. A Raju,ML Lab,A,3,Lab,3,No,1,araju@college.edu,Wednesday,Yes
+TCH020,Mr. A Raju,ML Lab,A,3,Lab,3,No,2,araju@college.edu,Wednesday,Yes
+TCH021,Mrs. B Sunitha,R Programming,A,3,Theory,4,No,0,bsunitha@college.edu,Wednesday,No
+TCH023,Ms. Q Rani,Artificial Intelligence,B,3,Theory,4,Yes,0,qrani@college.edu,Friday,No
+TCH024,Dr. O Babu,Machine Learning,B,3,Theory,4,No,0,obabu@college.edu,Friday,No
+TCH025,Mr. N Murthy,ML Lab,B,3,Lab,3,No,1,nmurthy@college.edu,Friday,Yes
+TCH025,Mr. N Murthy,ML Lab,B,3,Lab,3,No,2,nmurthy@college.edu,Friday,Yes
+TCH026,Mrs. I Rekha,R Programming,B,3,Theory,4,No,0,irekha@college.edu,Friday,No
+TCH027,Dr. S Patel,Cloud Computing,A,4,Theory,4,Yes,0,spatel@college.edu,Monday,No
+TCH028,Mr. U Sharma,Deep Learning,A,4,Theory,4,No,0,usharma@college.edu,Monday,No
+TCH029,Mrs. W Nair,Big Data Lab,A,4,Lab,3,No,1,wnair@college.edu,Monday,Yes
+TCH029,Mrs. W Nair,Big Data Lab,A,4,Lab,3,No,2,wnair@college.edu,Monday,Yes
+TCH030,Dr. X Iyer,Software Engineering,A,4,Theory,4,No,0,xiyer@college.edu,Monday,No
+TCH031,Ms. Y Verma,Cloud Computing,B,4,Theory,4,Yes,0,yverma@college.edu,Thursday,No
+TCH032,Dr. Z Pillai,Deep Learning,B,4,Theory,4,No,0,zpillai@college.edu,Thursday,No
+TCH033,Mr. AA Singh,Big Data Lab,B,4,Lab,3,No,0,aasingh@college.edu,Thursday,No
+TCH034,Mrs. BB Gupta,Software Engineering,B,4,Theory,4,No,0,bbgupta@college.edu,Thursday,No

@@ -1,0 +1,67 @@
+name: timetable_app
+description: Automated Conflict-Free College Timetable and Attendance Management System
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Database — sqflite for mobile/desktop, sqflite_common_ffi_web for web
+  sqflite: ^2.3.2
+  sqflite_common_ffi: ^2.3.3
+  sqflite_common_ffi_web: ^0.4.3
+  sqlite3: ^2.4.3  # Required by sqflite_common_ffi_web for WASM
+  path: ^1.9.0
+  path_provider: ^2.1.2
+
+  # State Management
+  provider: ^6.1.2
+
+  # UI
+  fl_chart: ^0.68.0
+  intl: ^0.19.0
+  table_calendar: ^3.1.2
+  flutter_slidable: ^3.1.0
+
+  # Storage — shared_preferences supports web
+  shared_preferences: ^2.2.3
+
+  # Notifications — mobile only (Android/iOS)
+  # Windows uses a local stub override (no NuGet needed)
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+
+  # File picker — supports web (bytes-based)
+  file_picker: ^8.1.2
+  archive: ^3.6.1
+
+  # Cloud sync — Supabase (shared DB across all devices)
+  supabase_flutter: ^2.5.6
+
+  # Utilities
+  uuid: ^4.4.2
+  crypto: ^3.0.3  # SHA-256 for password hashing
+  animations: ^2.0.11
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/templates/
+    # Note: sqlite3.wasm is automatically included in the web build
+    # by sqflite_common_ffi_web - no manual asset declaration needed
+
+dependency_overrides:
+  # Replace Windows notification plugin with a no-op stub
+  # This avoids the NuGet build requirement on Windows
+  flutter_local_notifications_windows:
+    path: packages/flutter_local_notifications_windows

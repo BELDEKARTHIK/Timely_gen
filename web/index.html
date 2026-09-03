@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving this app from a non-root path (e.g. /myapp/),
+    set the base href to that path: <base href="/myapp/">
+    For root serving: <base href="/">
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="College Timetable & Attendance Management System">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="TimetableOS">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>TimetableOS</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#6C63FF">
+
+  <style>
+    body {
+      background-color: #0F1117;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+    }
+    /* Splash while Flutter loads */
+    #splash {
+      position: fixed;
+      inset: 0;
+      background: #0F1117;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    #splash .logo {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, #6C63FF, #8B80FF);
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 8px 24px rgba(108,99,255,0.4);
+      margin-bottom: 20px;
+    }
+    #splash .name {
+      color: #fff;
+      font-family: -apple-system, sans-serif;
+      font-size: 24px; font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    #splash .sub {
+      color: #8888AA;
+      font-family: -apple-system, sans-serif;
+      font-size: 13px;
+    }
+    #splash .spinner {
+      margin-top: 24px;
+      width: 24px; height: 24px;
+      border: 2.5px solid #333355;
+      border-top-color: #6C63FF;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <!-- Native splash shown while Flutter downloads + initialises -->
+  <div id="splash">
+    <div class="logo">🎓</div>
+    <div class="name">TimetableOS</div>
+    <div class="sub">Loading...</div>
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    // Hide splash once Flutter is ready
+    window.addEventListener('flutter-first-frame', function() {
+      var splash = document.getElementById('splash');
+      if (splash) {
+        splash.style.opacity = '0';
+        splash.style.transition = 'opacity 0.3s';
+        setTimeout(function() { splash.remove(); }, 300);
+      }
+    });
+  </script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
