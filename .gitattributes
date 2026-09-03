@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.dart text eol=lf
+*.yaml text eol=lf
